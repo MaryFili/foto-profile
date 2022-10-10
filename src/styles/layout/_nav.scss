@@ -5,6 +5,7 @@ nav {
     width: 100%;
     height: 10rem;
 
+
     ul {
         li {
             display: none;
@@ -15,6 +16,11 @@ nav {
     #burger-label {
         width: 20px;
         margin-right: 2em;
+
+        & i {
+            color: white;
+            font-size: 2.8em;
+        }
     }
 
     #burger-label,
@@ -29,6 +35,9 @@ nav {
     #burger-checkbox {
         display: none;
 
+
+
+
         &:checked+ul {
             display: flex;
             flex-direction: column;
@@ -38,10 +47,14 @@ nav {
             width: 100%;
             text-align: center;
             gap: 2rem;
+            background-color: black;
+
         }
 
         &:checked+ul li {
             display: initial;
+
+
         }
 
 
@@ -50,8 +63,8 @@ nav {
 
     h1 {
 
-        font-size: calc(3.5em + 0.5vw);
-        margin-top: 1em;
+
+        // margin-top: 1em;
         font-weight: 300;
         letter-spacing: 2;
     }
@@ -76,7 +89,7 @@ nav {
             letter-spacing: 2;
         }
 
-        #burger-icon {
+        .fa-bars {
             display: none;
         }
 
@@ -118,7 +131,7 @@ nav {
             letter-spacing: 2;
         }
 
-        #burger-icon {
+        .fa-bars {
             display: none;
         }
 
