@@ -54,7 +54,14 @@ body {
         border-radius: .4em;
         display: block;
         margin: auto;
-        box-shadow: 0px 0px 10px 1px #FFFFFF, inset 0px 0px 18px 1px #FFFFFF;
+        box-shadow: 0px 0px 2px .5px hsla(0, 0%, 28%, 0.288),
+            0px 0px 2.5px -.3px hsla(0, 0%, 28%, 0.301),
+            0px 0px 3px -.5px hsla(0, 0%, 28%, 0.432),
+            0px 0px 3.5px -.8px hsla(0, 0%, 28%, 0.534),
+            0px 0px 7px -1px hsla(0, 0%, 28%, 0.678),
+            0px 0px 15px -1.3px hsla(0, 0%, 28%, 0.726),
+            0px 0px 25px -1.5px hsla(0, 0%, 68%, 0.753),
+            0px 0px 35px -1.8px hsla(0, 0%, 72%, 0.76);
         max-width: 80vw;
         max-height: 80vh;
     }
