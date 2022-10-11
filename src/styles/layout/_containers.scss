@@ -12,6 +12,8 @@ body {
 }
 
 .pic-container {
+
+
     background-color: #fff;
 
     div {
@@ -28,6 +30,52 @@ body {
         }
     }
 }
+
+// lightbox try
+
+.lightbox {
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    z-index: 1000;
+
+    &:target {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+
+    & img {
+        border-radius: .4em;
+        display: block;
+        margin: auto;
+        box-shadow: 0px 0px 10px 1px #FFFFFF, inset 0px 0px 18px 1px #FFFFFF;
+        max-width: 80vw;
+        max-height: 80vh;
+    }
+
+    & .close {
+        color: #fff;
+        font-size: 4em;
+        font-weight: bold;
+        height: 1em;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 1em;
+        z-index: 1001;
+    }
+
+}
+
+
+
+
 
 
 
@@ -104,51 +152,21 @@ body {
 
     .pic-container {
 
-        img {
-            max-width: 100%;
-            // height: 100%;
-            // height: auto;
-            // vertical-align: middle;
-            // display: inline-block;
-            object-fit: cover;
-            transition: all 0.5s ease;
-
-            &:hover {
-                box-shadow: #f9fbe7 0px 13px 27px -5px, #fffde6 0px 8px 16px -8px;
-                margin: calc(10%/6);
-                cursor: pointer;
-                z-index: 9999;
-                transform: scale(1.2);
-            }
-
-        }
-
-        #pic1:hover,
-        #pic4:hover,
-        #pic6:hover,
-        #pic8:hover,
-        #pic11:hover,
-        #pic16:hover {
-            transform: translateX(20%);
-            scale: 1.1;
-
-        }
-
-        #pic3:hover,
-        #pic7:hover,
-        #pic10:hover,
-        #pic13:hover,
-        #pic15:hover {
-            transform: translateX(-20%);
-            scale: 1.1;
-
-
-        }
-
-
         display: grid;
         grid-template-columns: repeat(3, 2fr);
         grid-template-rows: repeat (10, 1fr);
+
+        a:hover {
+
+            cursor: zoom-in;
+
+        }
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
     }
 
 
@@ -177,26 +195,16 @@ body {
         grid-row: 4/6;
     }
 
-    div:nth-of-type(10) {
-        grid-column: 3/4;
-        grid-row: 4/6;
-    }
-
-    div:nth-of-type(11) {
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-
     div:nth-of-type(12) {
-        grid-column: 2/3;
-        grid-row: 5/7;
+        grid-column: 1/2;
+        grid-row: 5/6;
     }
 
 
 
     div:nth-of-type(14) {
         grid-column: 2/3;
-        grid-row: 7/8;
+        grid-row: 6/8;
     }
 
     div:nth-of-type(15) {
@@ -213,6 +221,4 @@ body {
         grid-column: 2/3;
         grid-row: 8/11;
     }
-
-
 }
