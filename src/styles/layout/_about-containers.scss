@@ -1,0 +1,107 @@
+.about-bgr-pic {
+    background-color: black;
+    width: 100%;
+    min-height: 60%;
+    background-image: url(/src/resized-pics/5.jpg);
+    background-position: right 50% top 20%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.about-me {
+    margin-top: 2em;
+    background-color: rgba(0, 0, 0, 0.055);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50vw;
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+    }
+
+}
+
+
+
+@media (min-width: 620px) and (max-width: 1463px) {
+
+    .about-bgr-pic {
+        background-position: left 100% bottom 5%;
+    }
+
+    .about-me {
+        width: 100vw;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+
+        div {
+
+            p {
+                font-size: 1.12em;
+                padding: 1em;
+                text-align: left;
+
+
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1464px) {
+
+    .about-bgr-pic {
+        background-color: black;
+        width: 100%;
+        min-height: 60%;
+        background-image: url(/src/resized-pics/5.jpg);
+        background-position: right 55% top 40%;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+
+
+    .about-me {
+        height: 50vh;
+
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+        margin-right: 3em;
+
+
+        div {
+            width: 37vw;
+
+            p {
+                font-size: 1.4em;
+                // padding: 2.5em;
+                text-align: left;
+                margin-bottom: 8.5em;
+
+
+            }
+
+        }
+
+
+    }
+}

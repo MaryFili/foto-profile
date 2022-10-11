@@ -1,0 +1,27 @@
+.bgr-pic {
+
+    background-image: url(/src/resized-pics/1.jpg);
+    background-position: -70px 400px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@media (min-width:908px) and (max-width:1463px) {
+    .bgr-pic {
+
+
+        background-position: -170px 400px;
+        background-size: 120%;
+    }
+}
+
+@media (min-width:1464px) {
+    .bgr-pic {
+        background-image: url(/src/resized-pics/1.jpg);
+        background-position: -40px 150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+}
