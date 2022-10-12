@@ -2,12 +2,36 @@
 
     background-image: url(/src/resized-pics/1.jpg);
     // background-position: -70px 460px;
-    background-position: right 50% top 30%;
+    background-position: right 15% top 30%;
     background-size: 120%;
     background-repeat: no-repeat;
     min-height: 45vh;
     background-attachment: fixed;
 
+
+}
+
+.parallax-bottom {
+    background-position: right 15% bottom 0%;
+    background-size: 120%;
+
+
+}
+
+@media (min-width: 1008px) {
+
+    .parallax-contact {
+
+        background-image: url(/src/resized-pics/1.jpg);
+
+        background-position: right 55% top 0%;
+
+        background-repeat: no-repeat;
+        min-height: 50vh;
+        background-attachment: fixed;
+
+
+    }
 
 }
 
@@ -17,8 +41,15 @@
     justify-content: center;
     align-items: center;
 
+    @media (min-width: 1228px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
     .contact-header {
-        margin-bottom: 2em;
+        margin-top: .4em;
+        margin-bottom: 1em;
     }
 
     .contact-form {
@@ -47,4 +78,41 @@
 
 
     }
+}
+
+.direct-contact-container {
+    width: 75vw;
+    max-width: 450px;
+    margin: 2em 0;
+
+    .contact-list {
+        margin-bottom: 2em;
+    }
+
+    li {
+        width: 75vw;
+        max-width: 450px;
+
+        i {
+
+            margin: .5em 2em;
+            font-size: 1.5em;
+
+        }
+
+
+        .contact-text {
+
+            margin-left: 2em;
+
+        }
+    }
+}
+
+.social-media-list {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+
+
 }

@@ -34,6 +34,7 @@ h2 {
 }
 
 .contact-header {
+    text-align: center;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
@@ -49,5 +50,25 @@ h2 {
         color: #fff;
         font-family: 'Poppins', sans-serif;
         font-size: 1rem;
+    }
+}
+
+
+.contact-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: .6em;
+    font-weight: 300;
+
+
+
+}
+
+@media (min-width:568px) {
+
+    .contact-text {
+
+        font-size: .8em;
+
+
     }
 }
