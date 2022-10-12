@@ -1,0 +1,50 @@
+.parallax-contact {
+
+    background-image: url(/src/resized-pics/1.jpg);
+    // background-position: -70px 460px;
+    background-position: right 50% top 30%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    min-height: 45vh;
+    background-attachment: fixed;
+
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contact-header {
+        margin-bottom: 2em;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        #name,
+        #email,
+        .message,
+        .send-btn,
+        button {
+            background-color: $primary-color;
+            width: 75vw;
+            max-width: 450px;
+            margin-bottom: 1em;
+            border: 1px solid #fff;
+            padding: .5em;
+            border-radius: 5px;
+
+        }
+
+
+
+    }
+}
