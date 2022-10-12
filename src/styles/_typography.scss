@@ -6,7 +6,8 @@ li,
 a,
 p {
     color: white;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
 
 }
 
@@ -23,12 +24,12 @@ a {
 
 h1 {
 
-    font-size: calc(3.2em + 0.5vw);
+    // font-size: calc(3.2em + 0.5vw);
 
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: .5ch;
     font-weight: 400;
 }
