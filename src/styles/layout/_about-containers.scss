@@ -12,7 +12,7 @@
 }
 
 .about-me {
-    margin-top: 2em;
+    margin-top: 20em;
     background-color: rgba(0, 0, 0, 0.055);
     display: flex;
     justify-content: center;
@@ -50,10 +50,10 @@
 
     .about-me {
         width: 100vw;
-
         display: flex;
         justify-content: left;
         align-items: center;
+        margin-top: 2em;
 
 
         div {
@@ -68,6 +68,13 @@
 
             }
         }
+
+    }
+}
+
+@media (min-width: 620px) and (max-width: 908px) {
+    .about-me {
+        margin-top: 2em;
 
     }
 }

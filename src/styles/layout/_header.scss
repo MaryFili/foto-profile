@@ -10,7 +10,7 @@ header {
 }
 
 .about-header {
-    margin-top: 12em;
+    display: none;
 }
 
 @media (min-width: 685px) and (max-width: 907px) {
@@ -19,7 +19,23 @@ header {
     }
 }
 
+@media (min-width: 620px) and (max-width: 908px) {
+    .about-header {
+        display: block;
+
+        h2 {
+            display: block;
+        }
+    }
+}
+
+
 @media (min-width:908px) and (max-width:1463px) {
+
+    .about-header {
+        display: block;
+    }
+
     header {
 
         margin-top: 5em;
@@ -33,6 +49,10 @@ header {
 }
 
 @media (min-width:1464px) {
+    .about-header {
+        display: block;
+    }
+
     header {
 
 
